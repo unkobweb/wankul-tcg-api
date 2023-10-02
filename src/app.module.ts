@@ -5,6 +5,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
+import { FixturesModule } from './fixtures/fixtures.module';
 
 @Module({
   imports: [
@@ -18,7 +19,7 @@ import { ConfigModule } from '@nestjs/config';
       entities: ["dist/**/*.entity{.ts,.js}"],
       synchronize: true,
     }), 
-    UserModule, AuthModule
+    UserModule, AuthModule, FixturesModule
   ],
   controllers: [AppController],
   providers: [AppService],

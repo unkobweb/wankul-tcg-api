@@ -10,7 +10,7 @@ async function bootstrap() {
     secret: "myscret",
     resave: false,
     saveUninitialized: true
-}))
+  }))
   app.use(passport.initialize())
   app.use(passport.session())
   await app.listen(8080);
