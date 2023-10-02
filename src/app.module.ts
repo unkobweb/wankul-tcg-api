@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { AuthModule } from './auth/auth.module';
 import { ConfigModule } from '@nestjs/config';
 import { FixturesModule } from './fixtures/fixtures.module';
+import { OfferModule } from './offer/offer.module';
 
 @Module({
   imports: [
@@ -19,7 +20,7 @@ import { FixturesModule } from './fixtures/fixtures.module';
       entities: ["dist/**/*.entity{.ts,.js}"],
       synchronize: true,
     }), 
-    UserModule, AuthModule, FixturesModule
+    UserModule, AuthModule, FixturesModule, OfferModule
   ],
   controllers: [AppController],
   providers: [AppService],
