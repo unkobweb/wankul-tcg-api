@@ -1,0 +1,3 @@
+export const jwtConstants = {
+  secret: "J'AIME BEAUCOUP LAINK ET TERRACID, MEME QU'UN JOUR JE LES AIENT VU A LA CAVICON EN BIG 2015",
+};
